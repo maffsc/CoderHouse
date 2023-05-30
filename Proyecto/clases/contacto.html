@@ -4,63 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/Users/mariafernandasc/Documents/Proyecto/Proyecto/css/estilo.css" rel="stylesheet"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="C:\Users\vic_r\OneDrive\Documentos\GitHub\CoderHouse\Proyecto\css\estilo.css" rel="stylesheet"> 
     <title>Document</title>
 </head>
 <body>
-    <header
-        class="titulo">
-        <img src="/Users/mariafernandasc/Documents/Proyecto/Proyecto/img/letrasdc.png" alt="letras">
-
-        <nav>
-            <ul>
-                <li><a href="/Users/mariafernandasc/Documents/Proyecto/Proyecto/index.html">Inicio</a></li>
-                <li><a href="/Users/mariafernandasc/Documents/Proyecto/Proyecto/clases/serviciodomicilio.html">Servicio a domicilio</a></li>
-                <li><a href="/Users/mariafernandasc/Documents/Proyecto/Proyecto/clases/nuestros_productos.html">Nuestros productos</a></li>
-                <li><a href="/Users/mariafernandasc/Documents/Proyecto/Proyecto/clases/contacto.html">Contacto</a></li>
-                <li><a href="/Users/mariafernandasc/Documents/Proyecto/Proyecto/clases/ubicaciones.html">Ubicaciones</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="titulo">
+    <img src="C:\Users\vic_r\OneDrive\Documentos\GitHub\CoderHouse\Proyecto\img\letrasdc.png" alt="letras">
+    <nav class="navbar navbar-expand-sm  navbar-light sticky-top ">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="C:\Users\vic_r\OneDrive\Documentos\GitHub\CoderHouse\Proyecto\index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="C:\Users\vic_r\OneDrive\Documentos\GitHub\CoderHouse\Proyecto\clases\serviciodomicilio.html">Servicio a domicilio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="C:\Users\vic_r\OneDrive\Documentos\GitHub\CoderHouse\Proyecto\clases\nuestros_productos.html">Nuestros productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="C:\Users\vic_r\OneDrive\Documentos\GitHub\CoderHouse\Proyecto\clases\contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="C:\Users\vic_r\OneDrive\Documentos\GitHub\CoderHouse\Proyecto\clases\ubicaciones.html">Ubicaciones</a>
+            </li>
+        </ul>
+    </nav>
+  </header>
 
     <main>
       <form action="/my-handling-form-page" method="post">
         <h3>Llene este formulario si quiere contratar nuestro servicio
         </h3>
         <ul>
-         <li2>
-           <label for="name">Nombre:</label>
-           <input type="text" id="name" name="user_name">
-         </li2>
-         <li2>
-           <label for="mail">Correo electrónico:</label>
-           <input type="email" id="mail" name="user_mail">
-         </li2>
-         <li2>
-           <label for="msg">Mensaje:</label>
-           <textarea id="msg" name="user_message"></textarea>
-         </li2>
-         <li2 class="button">
+          <li2>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name">
+          </li2>
+          <li2>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail">
+          </li2>
+          <li2>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="user_tel">
+          </li2>
+          <li2>
+            <label for="tiposervi">Escoge que servicio quieres:</label>
+            <select name="tiposervicio" id="tiposervi">
+              <option value="Parrillada1"> Parrillada1</option>
+              <option value="Parrillada2"> Parrillada2</option>
+              <option value="Parrillada3"> Parrillada3</option>
+              <option value="Parrillada4"> Parrillada4</option>
+            </select>
+          </li2>
+          <li2>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li2>
+          <li2 class="button">
             <button type="submit">Enviar</button>
-         </li2>
+          </li2>
         </ul>
       </form>
 
         
     </main>
 
-    <footer>
-        <ul>
-            <li><b href="https://www.instagram.com/taqueria_don_carnelio_/?igshid=YmMyMTA2M2Y%3D"></b>instagram</li>
-            <li><b href="https://www.facebook.com/TaqueriaDonCarnelio/photos/"></b>Facebook</li>
-        </ul>
-        <p>
-            Un taco al dia es la llave de la alegría 
+    <footer class="bg-light text-black-50 text-center py-3">
+      <ul class="list-inline">
+          <li class="list-inline-item">
+              <a href="https://www.instagram.com/taqueria_don_carnelio_/?igshid=YmMyMTA2M2Y%3D" class="text-black-50">Instagram</a>
+          </li>
+          <li class="list-inline-item">
+              <a href="https://www.facebook.com/TaqueriaDonCarnelio/photos/" class="text-black-50">Facebook</a>
+          </li>
+      </ul>
+      <p class="mb-0">Un taco al día es la llave de la alegría</p>
+  </footer>
 
-        </p>
 
-
-    </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
 </body>
 </html>
